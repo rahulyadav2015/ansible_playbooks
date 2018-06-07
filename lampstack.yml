@@ -5,12 +5,12 @@
 
   tasks:
 - name: add epel-release repo
-   yum:
+  apt-get:
     name: epel-release
     state: present
 
 - name: Install nginx
-   yum:
+  apt-get:
     name: nginx
     state: present
 
