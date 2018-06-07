@@ -5,12 +5,12 @@
 
   tasks:
 - name: add epel-release repo
-  apt-get:
+   apt-get:
     name: epel-release
     state: present
 
 - name: Install nginx
-  apt-get:
+   apt-get:
     name: nginx
     state: present
 
