@@ -1,6 +1,6 @@
 ---
 - name: Install nginx
-  hosts: 34.201.105.44
+  hosts: all
   become: true
 
   tasks:
