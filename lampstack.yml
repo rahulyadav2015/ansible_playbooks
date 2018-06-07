@@ -1,8 +1,24 @@
-﻿---
-- name: install apache & php & mysql
-  hosts: 52.72.41.245
+---
+- name: Install nginx
+  hosts: host.name.34.201.105.44
   become: true
+
   tasks:
-    - name: "Install apache2"
-      package: name=apache2 state=present
+- name: add epel-release repo
+  yum:
+    name: epel-release
+    state: present
+
+- name: Install nginx
+  yum:
+    name: nginx
+    state: present
+
+- name: Insert Index Page
+  template:
+    src: index.html
+    dest: /home/ubuntu/index.html
+
+- name: Start NGiNX
+  service: started
 ...
