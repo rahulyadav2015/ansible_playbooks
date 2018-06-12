@@ -1,6 +1,6 @@
 ---
 - name: Hello World!
-  hosts: host1
+  hosts: all
   become: yes
   tasks:
     - name: update
