@@ -1,6 +1,7 @@
 ---
 - name: Hello World!
-  hosts: all
+  hosts: host1
+  sudo: yes
   tasks:
     - name: update
       apt: update_cache=yes
