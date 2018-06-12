@@ -1,7 +1,6 @@
 ---
 - name: Hello World!
   hosts: all
- 
   tasks:
     - name: update
       apt: update_cache=yes
@@ -11,3 +10,4 @@
 
     - name: restart apache2
       service: name=apache2 state=restarted
+...
