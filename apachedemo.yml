@@ -1,7 +1,7 @@
 ---
 - name: Hello World!
   hosts: host1
-  become: true
+  become: yes
   tasks:
     - name: update
       apt: update_cache=yes
